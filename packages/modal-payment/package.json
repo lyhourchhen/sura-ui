@@ -1,0 +1,23 @@
+{
+  "name": "@asurraa/sura-ui-modal-payment",
+  "version": "1.0.17",
+  "description": "asurraa modal payment component",
+  "author": "@asurraa",
+  "repository": "https://github.com/asurraa/sura-ui/tree/master/packages/modal-payment",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "yarn prebuild && tsc -w",
+    "build": "tsc --build tsconfig.json && npx copyfiles -u 1 src/**/*.css dist/"
+  },
+  "files": [
+    "dist"
+  ]
+}

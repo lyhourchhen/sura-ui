@@ -1,0 +1,19 @@
+{
+  "name": "@asurraa/sura-ui-sale-card",
+  "version": "2.0.14",
+  "description": "sale-card",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc -w",
+    "prebuild": "rimraf dist",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@asurraa/sura-ui-async-mask-components",
+  "version": "2.0.4",
+  "description": "",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "tsc -w",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@asurraa/sura-ui-socket",
+  "version": "1.0.8",
+  "description": "Sockets Handler with React",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "dependencies": {
+    "socket.io-client": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/socket.io-client": "^1.4.36"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "npx tsc -w",
+    "build": "npx tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ]
+}

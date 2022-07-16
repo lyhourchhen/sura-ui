@@ -1,0 +1,18 @@
+{
+  "name": "@asurraa/cards",
+  "version": "1.0.3",
+  "description": "Cards Design",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ]
+}

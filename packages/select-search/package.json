@@ -1,0 +1,26 @@
+{
+  "name": "@asurraa/sura-ui-select-search",
+  "version": "2.0.3",
+  "description": "asurraa select search component base on api",
+  "author": "@asurraa",
+  "repository": "https://github.com/asurraa/sura-ui/tree/master/packages/select-search",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "tsc -w",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ]
+}

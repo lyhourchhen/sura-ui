@@ -1,0 +1,3 @@
+[submodule "playgrounds/krubkrong-mvp"]
+	path = playgrounds/krubkrong-mvp
+	url = git@github.com:krubkrong/krubkrong-mvp.git

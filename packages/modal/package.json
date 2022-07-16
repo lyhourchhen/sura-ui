@@ -1,0 +1,29 @@
+{
+  "name": "@asurraa/sura-ui-modal",
+  "version": "1.3.12",
+  "description": "asurraa modal component",
+  "author": "@asurraa",
+  "repository": "https://github.com/asurraa/sura-ui/tree/master/packages/modal",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "yarn prebuild && tsc -w",
+    "build": "tsc --build tsconfig.json && copyfiles -u 1 src/**/*.css dist/"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "ant-design-draggable-modal": "^1.0.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}

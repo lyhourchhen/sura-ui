@@ -1,0 +1,22 @@
+{
+  "name": "@asurraa/sura-ui-fetcher",
+  "version": "1.2.20",
+  "description": "crud fetch wrapper",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "scripts": {
+    "dev": "tsc -w",
+    "prebuild": "rimraf dist",
+    "build": "npx tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "react-query": "^3.39.0"
+  }
+}

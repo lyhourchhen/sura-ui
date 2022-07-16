@@ -1,0 +1,11 @@
+.ant-modal-wrap {
+  z-index: 999 !important;
+}
+
+.ant-modal-mask {
+  display: none !important;
+}
+/* 
+.ant-modal {
+  height: auto !important;
+} */

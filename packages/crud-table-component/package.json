@@ -1,0 +1,13 @@
+{
+  "name": "@asurraa/sura-ui-crud-table-component",
+  "version": "1.0.4",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "tsc -w",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@asurraa/sura-ui-type",
+  "version": "1.0.0",
+  "description": "Test Module",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "npx tsc -w",
+    "prepublish": "yarn build",
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "utility-types": "^3.10.0"
+  }
+}

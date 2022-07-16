@@ -1,0 +1,19 @@
+{
+  "name": "@asurraa/sura-ui-dynamic-route-tabs",
+  "author": "lyhourchhen",
+  "module": "dist/dynamic-route-tabs.esm.js",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "tsc -w",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ]
+}

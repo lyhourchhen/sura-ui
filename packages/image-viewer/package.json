@@ -1,0 +1,23 @@
+{
+  "name": "@asurraa/sura-ui-image-viewer",
+  "version": "1.0.34",
+  "description": "image-viewer",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "scripts": {
+    "dev": "tsc -w",
+    "prebuild": "rimraf dist",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "react-avatar": "^4.0.0",
+    "react-cool-img": "^1.2.12"
+  }
+}

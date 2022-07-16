@@ -1,0 +1,22 @@
+{
+  "name": "@asurraa/sura-ui-upload",
+  "version": "1.0.21",
+  "description": "Upload Wrapper",
+  "author": "@asurraa",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "yarn prebuild && tsc -w",
+    "build": "tsc --build tsconfig.json",
+    "deps": "yarn upgrade-interactive --latest",
+    "prepublish": "yarn build",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "antd-img-crop": "^3.14.1"
+  }
+}
